@@ -50,7 +50,7 @@ function Home() {
         <h1>Cadastro de Usuários</h1>
 
         <input placeholder="Nome" type="text" name='nome' id='name' ref={inputName} />
-        <input placeholder="Idade" type="number" name='idade' id='idade' ref={inputAge} />
+        <input placeholder="Idade" type="number" name='idade' id='idade' min={1} ref={inputAge} />
         <input placeholder="E-mail" type="email" name='email' id='email' ref={inputEmail} />
 
         <button type="button" onClick={createUsers} >Cadastrar</button>
