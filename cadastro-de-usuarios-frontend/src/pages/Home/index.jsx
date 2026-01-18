@@ -1,42 +1,47 @@
 import { useEffect, useState, useRef } from 'react'
 import './style.css'
 import Lixeira from '../../assets/imagem-lixeira.png'
-import api from  '../../services/api'
+import api from '../../services/api'
 
 function Home() {
 
-const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([])
 
-const inputName = useRef()
-const inputAge = useRef()
-const inputEmail = useRef()
-  
+  const inputName = useRef()
+  const inputAge = useRef()
+  const inputEmail = useRef()
 
-  async function getUsers(){
+
+  async function getUsers() {
     const usersFromApi = await api.get('/usuarios')
-    setUsers( usersFromApi.data)
-    
+    setUsers(usersFromApi.data)
+
   }
 
-  async function createUsers(){
-    await api.post('/usuarios',{
+  async function createUsers() {
+    await api.post('/usuarios', {
       name: inputName.current.value,
       age: inputAge.current.value,
       email: inputEmail.current.value
     })
+
+    inputName.current.value = ""
+    inputAge.current.value = ""
+    inputEmail.current.value = ""
+
     getUsers()
   }
 
-  async function deleteUsers(id){
+  async function deleteUsers(id) {
     await api.delete(`/usuarios/${id}`)
     getUsers()
-    
+
   }
 
-   useEffect(() => {
+  useEffect(() => {
     getUsers()
 
-   }, [])
+  }, [])
 
   return (
     <div className='container'>
@@ -52,7 +57,7 @@ const inputEmail = useRef()
       </form>
 
       {users.map(user => (
-         
+
         <div key={user.id} className="card">
           <div>
             <p>Nome: <span>{user.name}</span> </p>
