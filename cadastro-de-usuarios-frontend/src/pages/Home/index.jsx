@@ -19,6 +19,7 @@ function Home() {
   }
 
   async function createUsers() {
+  try {
     await api.post('/usuarios', {
       name: inputName.current.value,
       age: inputAge.current.value,
@@ -30,7 +31,16 @@ function Home() {
     inputEmail.current.value = ""
 
     getUsers()
+
+  } catch (error) {
+    if (error.response && error.response.data && error.response.data.message) {
+      alert(error.response.data.message)
+    } else {
+      alert("Erro desconhecido")
+    }
   }
+}
+
 
   async function deleteUsers(id) {
     await api.delete(`/usuarios/${id}`)
