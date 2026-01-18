@@ -87,14 +87,14 @@ model User {
 
 #### Clonar o repositório:
 ```bash
-git clone https://github.com/Gabriel-1812/Cadastro-de-Usuarios-backend.git
+git clone https://github.com/Gabriel-1812/Cadastro-de-Usuarios-Fullstack.git
 ```
 
 ### Backend:
 
 #### 1️⃣ Entrar na pasta do backend:
 ```bash
-cd Cadastro-de-Usuarios-backend
+cd .\cadastro-de-usuarios-backend\
 ```
 
 #### 2️⃣ Instalar as dependências:
@@ -122,7 +122,7 @@ http://localhost:3000
 
 #### 1️⃣ Entrar na pasta do projeto
 ```bash
-cd Cadastro-de-Usuarios-frontend
+cd .\cadastro-de-usuarios-frontend\
 ```
 
 #### 2️⃣ Instalar dependências
