@@ -16,8 +16,6 @@ Um sistema completo de cadastro de usuários com frontend em React + Vite, respo
 
 -HTML5 / CSS3 / JS (ES6+)
 
----
-
 ### Backend:
 
 -Node.js
@@ -37,18 +35,23 @@ Um sistema completo de cadastro de usuários com frontend em React + Vite, respo
 ### Frontend:
 
 ✔ Exibição da tela de cadastro  
-✔ Envio dos dados do usuário para o backend  
-✔ Validações simples nos inputs  
-✔ Integração com API REST criada no backend
 
----
+✔ Envio dos dados do usuário para o backend  
+
+✔ Validações simples nos inputs  
+
+✔ Integração com API REST criada no backend
 
 ### Backend:
 
 ✔ Criar novos usuários
+
 ✔ Listar todos os usuários
+
 ✔ Excluir usuário
+
 ✔ Integração com Prisma ORM
+
 ✔ API REST completa
 
 ---
@@ -77,6 +80,8 @@ model User {
   age   String
 }
 ```
+
+---
 
 ## 🚀 Como rodar o projeto
 
