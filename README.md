@@ -143,3 +143,8 @@ npm run dev
 O Vite vai mostrar um link como:  
 **http://localhost:5173**  
 Abra esse endereço no navegador.
+
+## 🎬 Demonstração do Frontend
+
+▶️ [Assistir vídeo da aplicação](src/assets/demo-cadastro-usuarios.mp4)
+
