@@ -102,13 +102,18 @@ cd .\cadastro-de-usuarios-backend\
 npm install
 ```
 
-#### 3️⃣ Configurar o arquivo .env
+#### 3️⃣ Gere o PrismaClient:
+```bash
+npx prisma generate
+```
+
+#### 4️⃣ Configurar o arquivo .env
 Crie um arquivo .env na raiz do projeto e coloque sua string do MongoDB Atlas:
 ```bash
 DATABASE_URL="sua_string_do_mongodb_aqui"
 ```
 
-#### 4️⃣ Rodar o servidor:
+#### 5️⃣ Rodar o servidor:
 ```bash
 node server.js
 ```
